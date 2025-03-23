@@ -72,7 +72,6 @@ The development shell automatically:
 
 ## Notes
 
-- Some dependencies on macOS may need to be installed through Homebrew
 - The flake ensures compatibility with both x86_64 and ARM architectures
 - PKG_CONFIG_PATH is configured to find both Homebrew and system libraries on macOS
 
@@ -87,9 +86,9 @@ The development shell automatically:
    ```
 
 2. On macOS, if you encounter missing library errors:
-   ```bash
-   brew install icu4c
-   ```
+   The development environment now provides all necessary libraries through Nix, including ICU and SQLite. You shouldn't need to install additional libraries through Homebrew.
+   
+   If you still experience issues, please file a bug report.
 
 ### Updating Dependencies
 
